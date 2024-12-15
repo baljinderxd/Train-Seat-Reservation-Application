@@ -1,0 +1,27 @@
+<div class="booking-form">
+    <h3>Seat Booking</h3>
+    <form (ngSubmit)="onSubmit()" #bookingForm="ngForm">
+        <div class="form-group">
+            <label for="numberOfSeats">Number of Seats (max 7):</label>
+            <input type="number" id="numberOfSeats" [(ngModel)]="numberOfSeats" name="numberOfSeats" required min="1"
+                [max]="maxSeats">
+        </div>
+        <div class="booked-seats" *ngIf="lastBookedSeats.length > 0">
+            <p>Successfully booked seats:</p>
+            <div *ngFor="let seatNumber of lastBookedSeats">
+                <p class="seat-numbers">{{ seatNumber }}</p>
+            </div>
+        </div>
+        <div class="error-message" *ngIf="errorMessage">
+            {{ errorMessage }}
+        </div>
+        <div class="button-group">
+            <button type="submit" [disabled]="!isFormValid()" class="book-button">
+                Book Seats
+            </button>
+            <button type="button" (click)="resetBookings()" class="reset-button">
+                Reset All Bookings
+            </button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,85 @@
+# Angular
+node_modules/
+dist/
+e2e/
+coverage/
+*.spec.ts
+*.spec.js
+
+# Node.js
+node_modules/
+build/
+logs/
+.env
+
+# General
+.DS_Store
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+*.suo
+
+# OS
+*.tmp
+*.log
+*.pid
+*.seed
+*.pid.lock
+*.exe
+*.dll
+*.zip
+*.rar
+*.7z
+*.gz
+*.bz2
+*.xz
+*.lzma
+*.lz4
+*.xz
+*.lz
+*.zst
+*.tgz
+*.tar
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.lzma
+*.tar.lz4
+*.tar.xz
+*.tar.lz
+*.tar.zst
+*.tbz2
+*.txz
+*.tlz
+*.tzst
+
+# Angular CLI
+.angular/
+!.angular-cli.json
+!.angular.json
+!.angular-lock.json
+.angular/cache/
+.angular/postcss-cache/
+.angular/stylelint-cache/
+.angular/tsc-wrapped/
+.angular/webpack/
+.angular/webpack/generated/
+.angular/webpack/generated/*.js
+.angular/webpack/generated/*.js.map
+.angular/webpack/generated/*.css
+.angular/webpack/generated/*.css.map
+.angular/webpack/generated/*.html
+.angular/webpack/generated/*.html.map
+
+# Node.js dependencies
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+yarn.lock
+package-lock.json
+pnpm-lock.yaml

@@ -1,0 +1,11 @@
+<div class="coach-layout">
+    <h2>Coach Layout</h2>
+    <div class="layout-info">
+        <p>Total Seats: 80 | Seats per Row: 7 | Last Row: 3 seats</p>
+    </div>
+    <div class="seat-rows">
+        <app-seat-row *ngFor="let row of rows" [rowNumber]="row" [seats]="getSeatsForRow(row)"
+            [isLastRow]="row === totalRows">
+        </app-seat-row>
+    </div>
+</div>

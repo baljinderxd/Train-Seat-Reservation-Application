@@ -1,0 +1,8 @@
+<div class="seat-row" [class.last-row]="isLastRow">
+    <div class="row-number">Row {{rowNumber}}</div>
+    <div class="seats">
+        <div *ngFor="let seat of seats" class="seat" [class.booked]="seat.isBooked" [class.available]="!seat.isBooked">
+            {{ seat.seatNumber }}
+        </div>
+    </div>
+</div>
