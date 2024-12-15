@@ -13,7 +13,7 @@ export class BookingService {
   public seatsSubject = new BehaviorSubject<Seat[]>(this.seats);
   public seats$ = this.seatsSubject.asObservable();
 
-  private apiUrl = 'http://localhost:3000';
+  private apiUrl = 'https://train-seat-reservation-backend-seven.vercel.app';
 
   /**
    * Resets all seat bookings.
